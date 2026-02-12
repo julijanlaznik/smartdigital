@@ -45,9 +45,9 @@ const CTA: React.FC = () => {
     "/car wrap 1.mp4",
     "/mercedes.mp4",
     "/final ig smart.mp4",
-    "/hands typing on a laptop.mp4",
-    "/porsche 911 driving on a highway at night.mp4",
-    "/silhouette of a man walking in a tunnel.mp4"
+    "/cupra final video.mp4",
+    "/PF 2025.mp4",
+    "/muzicek showreel.mp4"
   ];
 
   return (
