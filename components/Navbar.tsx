@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-6 py-6 relative h-24 flex items-center justify-between">
           
           <div className={`flex items-center justify-between w-full transition-all duration-500 ease-in-out ${scrolled ? 'opacity-0 translate-y-[-20px] pointer-events-none' : 'opacity-100 translate-y-0 pointer-events-auto'}`}>
-            <a href="/logo v2.png" className="block">
+            <a href="#" className="block">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-white/5 border border-white/10 rounded-full overflow-hidden flex items-center justify-center">
                   <div className="w-4 h-4 bg-white/20 rounded-full"></div>
