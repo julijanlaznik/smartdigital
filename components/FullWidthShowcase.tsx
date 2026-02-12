@@ -3,14 +3,14 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const FullWidthShowcase: React.FC = () => {
   const showcaseVideos = [
-    { url: "/car wrap 1.mp4", label: "Lifestyle" },
-    { url: "/cupra final video.mp4", label: "Urban" },
-    { url: "/PF 2025.mp4", label: "Automotive" },
-    { url: "/final ig smart.mp4", label: "Business" },
-    { url: "/mercedes.mp4", label: "Tech" },
-    { url: "/car wrap 1.mp4", label: "Creative" },
-    { url: "/cupra final video.mp4", label: "Premium" },
-    { url: "/final ig smart.mp4", label: "Vibe" }
+    { url: "/car wrap 1.mp4", label: "" },
+    { url: "/cupra final video.mp4", label: "" },
+    { url: "/PF 2025.mp4", label: "" },
+    { url: "/final ig smart.mp4", label: "" },
+    { url: "/mercedes.mp4", label: "" },
+    { url: "/car wrap 1.mp4", label: "" },
+    { url: "/cupra final video.mp4", label: "" },
+    { url: "/final ig smart.mp4", label: "" }
   ];
 
   const [translateX, setTranslateX] = useState(0);
