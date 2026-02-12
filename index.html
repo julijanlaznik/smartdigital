@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART DIGITAL | Media Production Partner</title>
+    <meta name="description" content="Tvoříme video a foto obsah, který buduje značku a generuje výsledky. Media production partner pro silné a rostoucí byznysy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#c7f715',
+              dark: '#050505',
+              card: '#0f0f0f',
+            },
+            fontFamily: {
+              sans: ['SF Pro Display', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'pop-up': 'popUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              popUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px) scale(0.95)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        cursor: none;
+      }
+      ::selection {
+        background-color: #c7f715;
+        color: #000;
+      }
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .neon-border:hover {
+        border-color: #c7f715;
+        box-shadow: 0 0 20px rgba(199, 247, 21, 0.2);
+      }
+      /* Custom Cursor */
+      #cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #c7f715;
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s, height 0.3s;
+      }
+      #cursor-outline {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(199, 247, 21, 0.3);
+        position: fixed;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
+      }
+      .cursor-hover #cursor-dot {
+        width: 12px;
+        height: 12px;
+      }
+      .cursor-hover #cursor-outline {
+        width: 60px;
+        height: 60px;
+        background: rgba(199, 247, 21, 0.1);
+        border-color: #c7f715;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+    <div id="root"></div>
+    <script>
+      const dot = document.getElementById('cursor-dot');
+      const outline = document.getElementById('cursor-outline');
+      document.addEventListener('mousemove', (e) => {
+        dot.style.left = e.clientX + 'px';
+        dot.style.top = e.clientY + 'px';
+        outline.style.left = e.clientX + 'px';
+        outline.style.top = e.clientY + 'px';
+      });
+      document.addEventListener('mouseover', (e) => {
+        if (e.target.closest('a, button, .interactive')) {
+          document.body.classList.add('cursor-hover');
+        } else {
+          document.body.classList.remove('cursor-hover');
+        }
+      });
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
