@@ -13,19 +13,19 @@ const team: TeamMember[] = [
   {
     name: 'Julijan Laznik',
     role: 'Creativity, DOP',
-    specialty: 'Visual Lead',
+    specialty: 'Founder',
     image: '/julijan.jpg'
   },
   {
     name: 'Matyáš Hartl',
     role: 'Communication, Strategy',
-    specialty: 'Growth',
+    specialty: 'Cofounder',
     image: '/maytas1.jpg'
   },
   {
     name: 'Marek Panoch',
     role: 'Photo, Automatization',
-    specialty: 'Tech Ops',
+    specialty: 'CTO',
     image: '/mara2.jpg'
   }
 ];
