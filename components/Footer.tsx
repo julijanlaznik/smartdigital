@@ -12,11 +12,6 @@ const Footer: React.FC = () => {
           <span className="font-sans text-lg font-black tracking-tighter text-white">Smart<span className="text-white/50">.</span></span>
         </div>
 
-        <div className="flex space-x-8 text-[10px] font-black uppercase tracking-[0.2em] text-white/40">
-          <a href="#" className="hover:text-brand transition-colors">Instagram</a>
-          <a href="#" className="hover:text-brand transition-colors">Vimeo</a>
-          <a href="#" className="hover:text-brand transition-colors">LinkedIn</a>
-        </div>
 
         <div className="text-[10px] font-medium text-white/20 uppercase tracking-widest">
           © {new Date().getFullYear()} SMART DIGITAL. Všechna práva vyhrazena.
