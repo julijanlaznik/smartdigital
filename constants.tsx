@@ -76,16 +76,16 @@ export const PROCESS_STEPS: Step[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'Jan Marek',
+    name: 'Jiří D.',
     role: 'CEO',
-    company: 'AutoElite',
+    company: 'ČVB',
     content: 'Spolupráce se Smart Digital posunula naši vizuální prezentaci o úroveň výš. Jejich videa nám generují reálné leady.',
     logo: 'https://picsum.photos/100/40?random=10',
   },
   {
-    name: 'Lucie Nová',
+    name: 'Vojta N.',
     role: 'Marketing Director',
-    company: 'E-Shop Pro',
+    company: 'Spectra wash',
     content: 'Konečně partner, který nad obsahem přemýšlí strategicky. Nejsou to jen hezké obrázky, ale obsah, který prodává.',
     logo: 'https://picsum.photos/100/40?random=11',
   },
