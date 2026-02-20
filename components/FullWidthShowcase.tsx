@@ -9,7 +9,7 @@ const FullWidthShowcase: React.FC = () => {
     { url: "/final ig smart.mp4", label: "" },
     { url: "/mercedes.mp4", label: "" },
     { url: "/car wrap 1.mp4", label: "" },
-    { url: "/cupra final video.mp4", label: "" },
+    { url: "/Audi wrap video.mp4.", label: "" },
     { url: "/final ig smart.mp4", label: "" }
   ];
 
