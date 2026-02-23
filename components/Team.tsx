@@ -25,7 +25,7 @@ const team: TeamMember[] = [
   {
     name: 'Marek Panoch',
     role: 'Photo, Automatization',
-    specialty: 'CTO',
+    specialty: 'Team member',
     image: '/mara2.jpg'
   }
 ];
